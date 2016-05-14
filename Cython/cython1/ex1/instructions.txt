@@ -1,0 +1,12 @@
+Files to work with:
+	setup.py
+	This file sets everything up. Look inside for further details.
+	hello.pyx
+	This file contains code to compile.
+
+To compile:
+	Run cmd in this directory.
+	Type:
+		python setup.py build_ext --inplace --compiler=ming32
+
+hello.pyd is created and can be imported and run from python program.
