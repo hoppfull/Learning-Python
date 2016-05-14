@@ -1,0 +1,1 @@
+Benchmark the implementations of the strategy pattern!
