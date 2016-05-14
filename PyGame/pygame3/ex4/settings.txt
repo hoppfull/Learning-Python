@@ -1,0 +1,9 @@
+settings = {#A dictionary containing my program specifications
+"$name"			:		"myProgram v0.01",			#caption on top of program window
+"$res"				:		(800, 600),							#resolution
+"$fps"				:		30,										#frames per second
+"$bg_col"			:		(50,100,100),						#the background colour
+"$icon"				:		"icon1_32x32.png",				#the icon on top left corner of program window
+"$u1_img"		:		"unit1_64x64.png",				#the unit sprite texture
+"$t1_img"		:		"target1_128x128.png"		#the target sprite texture
+}
