@@ -1,0 +1,40 @@
+Keywords I need to get back to later on:
+yield
+		has something to do with something called "generators" and "iterables"
+raise
+		has something to do with throwing exceptions
+is
+		has something to do with testing something called identity, not equality
+_______________________________________________________________________
+operators left to learn:
+		( )
+		[ ]
+		{ }
+		@ - Something called decorator or something
+		:
+		.
+		;
+		
+string formats left to learn:
+		%d - numbers?
+		%i
+		%o
+		%u
+		%x
+		%X
+		%e
+		%E
+		%f
+		%F
+		%g
+		%G
+		%c
+		%r
+		%s
+		%%
+		string escape squences:
+		\a
+		\b
+		\f
+		\r
+		\v
