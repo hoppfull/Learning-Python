@@ -1,0 +1,19 @@
+1. Create a model in Blender.
+  a. Assign materials and textures to the model.
+  b. Make sure to have the addon for exporting models in the DirectX-fileformat, (eg. model.x)
+  c. Export the model in the DirectX-fileformat
+
+2. Convert the DirectX-file to a Panda3D .egg-file with x2egg.exe
+  a. x2egg.exe can be found in the Panda3D-SDK under /bin-folder
+  b. Copy x2egg.exe to where the DirectX-file is located.
+	Make sure all textures are in the same folder regardless of what the
+	relative/absolute path for textures was in Blender before export!
+  c. Use the command tool in folder where x2egg.exe and DirectX-file is located.
+	Use command: "x2egg -h" for help and instructions
+3. If you want to use relative path for textures, simply modify the egg-file with notepad
+	Everything can be adjusted in the .egg-file with notepad.
+
+Notes:
+	This method isn't ideal for animated models becouse DirectX-file generates
+	animation with interpolation between keyframes while Panda3D cannot interpolate.
+	This can be worked around by saving animation in Blender as all frames keyframed.

@@ -1,0 +1,3 @@
+Look in dummy.egg with notepad!
+commandline:
+	"egg2bam -txo -ctex dummy.egg -o dummy.bam"

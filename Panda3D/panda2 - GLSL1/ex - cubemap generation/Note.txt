@@ -1,0 +1,1 @@
+The directional light gets inverted since you're basicly getting the diffusion from inside a sphere

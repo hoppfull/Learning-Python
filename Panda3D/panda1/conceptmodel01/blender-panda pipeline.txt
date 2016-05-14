@@ -1,0 +1,25 @@
+1. Create resources in Blender and Photoshop
+2. Export models from Blender:
+  a. The DirectX fileformat (eg. model.x) is a good intermediary step to create .egg for Panda3D
+	Make sure the model has atleast one material and one texture for use as templates!
+  b. Convert model.x to model.egg with x2egg.exe from the Panda3D SDK.
+	Use the commandtool and use the command: "x2egg model.x model.egg"
+	If you want to be able to use normalmaps on your model, use the command:
+	"x2egg -tbnall model.x -o model.egg"
+
+3. Setup model.egg to use textures properly.
+	This is tricky and needs lots of googling to get right.
+	To assign textures to all polygons, use the notepad "find and replace"-function
+	eg: "<TRef> { tref1 }" to "<TRef> { tref1 } <TRef> { tref2 }"
+	Check out:
+		http://panda3d.cvs.sourceforge.net/panda3d/panda/src/doc/eggSyntax.txt?view=markup
+
+4. Convert textures to precompressed (for GPU) .txo files (eg. texture.txo)
+	use the dummy.egg file and set it up to reference the textures you want to convert to .txo
+	then use the tool egg2bam.exe from Panda3D SDK, use the command:
+	"egg2bam -txo -ctex dummy.egg -o dummy.bam" then throw away dummy.bam
+
+5. Convert model.egg to binary model.bam file
+	use the tool egg2bam again with the command:
+	"egg2bam model.egg model.bam"
+
