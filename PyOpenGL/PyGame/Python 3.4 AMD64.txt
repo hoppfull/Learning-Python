@@ -1,0 +1,1 @@
+Using Python 3.4 64-bit and PyGame for handling window and user input

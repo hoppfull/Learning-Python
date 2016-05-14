@@ -1,0 +1,20 @@
+# This is a modified stanford.ply file. It organizes data nicely.
+# I've removed all the junk info. The vertex data is nicely ordered with
+# normals and uv coordinates in columns next to vertices. This way this
+# file can be loaded into a VBO in opengl with minimal effort and modification. 
+vertex_data # Vertex, Normal and UVs arranged neatly in columns:
+1.000000 -1.000000 0.000000 0.000000 0.000000 1.000000 0.029219 0.179424
+1.000000 1.000000 0.000000 0.000000 -0.707083 0.707083 0.664170 0.179424
+-1.000000 1.000000 0.000000 0.000000 -0.707083 0.707083 0.664170 0.814375
+1.000000 1.000000 1.000000 0.000000 -1.000000 0.000000 0.981646 0.179424
+-1.000000 1.000000 1.000000 0.000000 -1.000000 0.000000 0.981646 0.814375
+-1.000000 -1.000000 0.000000 0.000000 0.000000 1.000000 0.029219 0.814375
+
+# Indices are tabbed becouse it can be done fast with notepad++ and it's an
+# indicator to loading script that it's reading indices. Incidentally, tabs can't
+# be used anywhere else.
+index_data # First entry is just an indicator of how many entries will follow:
+	3 0 1 2
+	3 1 3 4
+	3 5 0 2
+	3 2 1 4

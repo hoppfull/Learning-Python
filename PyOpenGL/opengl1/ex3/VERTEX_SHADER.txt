@@ -1,0 +1,17 @@
+varying vec4 vertex_color;
+
+/*
+vertex_color is a variable of type 'varying' and 'vec4'
+Since it's declared outside our main function, it apparently
+carries over to our fragment_shader... where we must also declare
+it in the same manner. I don't understand which takes precedence.
+*/
+
+void main(){
+	gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+	vertex_color = gl_Color;
+}
+
+/*
+This looks a lot like c or c++!
+*/
